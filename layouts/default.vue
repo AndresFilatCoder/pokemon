@@ -5,7 +5,7 @@
 			<div class="d-flex justify-content-center my-2">
 				<div class="d-inline-block">
 					<div class="search-content d-flex bg-light">
-						<input class="search-input" type="text" placeholder='Presiona "Enter" para buscar' v-model="searchText" @keyup.enter="searchPokemon()">
+						<input class="search-input" type="text" placeholder='Presiona Enter para buscar' v-model="searchText" @keyup.enter="searchPokemon()">
 						<div class="search-button pe-1 d-flex align-items-center justify-content-end" @click="searchPokemon()">
 							<Icon class="search-icon" name="material-symbols:search"></Icon>
 							<span>Buscar</span>
