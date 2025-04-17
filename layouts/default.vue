@@ -1,7 +1,7 @@
 <template>
 	<div class="main-content">
 		<header class="border-bottom border-ligh py-2">
-			<h1 class="pokemon-font mb-0">Busca o selecciona un PoKeMoN</h1>
+			<h1 class="pokemon-font text-center mb-0">Busca o selecciona un PoKeMoN</h1>
 			<div class="d-flex justify-content-center my-2">
 				<div class="d-inline-block">
 					<div class="search-content d-flex bg-light">
@@ -15,7 +15,7 @@
 			</div>
 		</header>
 
-		<div class="py-5">
+		<div class="main-content py-5">
 			<slot name="default"></slot>
 		</div>
 
@@ -85,7 +85,13 @@ footer {
 }
 .search-button {
 	border-radius: 10px;
-	background-color: #e6e6e6;
+	background-color: #eeeeee;
 	cursor: pointer;
+	&:hover {
+		background-color: #e1e1e1;
+	}
+}
+.main-content {
+	min-height: 100vh;
 }
 </style>
