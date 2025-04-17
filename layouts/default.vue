@@ -5,8 +5,11 @@
 			<div class="d-flex justify-content-center my-2">
 				<div class="d-inline-block">
 					<div class="search-content d-flex bg-light">
-						<Icon class="search-icon" name="material-symbols:search"></Icon>
-						<input class="search-input" type="text" placeholder="Pikachu" v-model="searchQuery">
+						<input class="search-input" type="text" placeholder='Presiona "Enter" para buscar' v-model="searchText" @keyup.enter="searchPokemon()">
+						<div class="search-button pe-1 d-flex align-items-center justify-content-end" @click="searchPokemon()">
+							<Icon class="search-icon" name="material-symbols:search"></Icon>
+							<span>Buscar</span>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -30,8 +33,14 @@
 </template>
 
 <script setup>
-const { searchQuery } = useSearch()
-const socialNetworks = useSocialNewtworks()
+const searchQuery = useSearch();
+const socialNetworks = useSocialNewtworks();
+
+const searchText = ref('');
+
+const searchPokemon = () => {
+	searchQuery.value = searchText.value
+}
 </script>
 
 <style lang="scss" scoped>
@@ -65,13 +74,18 @@ footer {
 	border-radius: 5px;
 	.search-input {
 		border: none;
-		border-top-right-radius: 5px;
-		border-bottom-right-radius: 5px;
+		border-top-left-radius: 5px;
+		border-bottom-left-radius: 5px;
 		padding: 0rem 1rem;
 		&:focus {
 			outline: none;
   			border: none;
 		}
 	}
+}
+.search-button {
+	border-radius: 10px;
+	background-color: #e6e6e6;
+	cursor: pointer;
 }
 </style>
