@@ -1,0 +1,20 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: sans-serif;
+}
+
+@font-face {
+	font-family: 'PokemonSolid';
+	src: url('/fonts/PokemonSolid.ttf');
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+
+.pokemon-font {
+	font-family: 'PokemonSolid', sans-serif;
+	color: $pokemon-yellow;
+  	-webkit-text-stroke: 2px $pokemon-blue;
+}

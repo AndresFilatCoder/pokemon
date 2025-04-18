@@ -1,11 +1,11 @@
 <template>
 	<div class="main-content">
 		<header class="border-bottom border-ligh py-2">
-			<h1 class="pokemon-font mb-0">Busca o selecciona un PoKeMoN</h1>
+			<h1 class="pokemon-font text-center mb-0">Busca o selecciona un PoKeMoN</h1>
 			<div class="d-flex justify-content-center my-2">
 				<div class="d-inline-block">
 					<div class="search-content d-flex bg-light">
-						<input class="search-input" type="text" placeholder='Presiona "Enter" para buscar' v-model="searchText" @keyup.enter="searchPokemon()">
+						<input class="search-input" type="text" placeholder='Presiona Enter para buscar' v-model="searchText" @keyup.enter="searchPokemon()">
 						<div class="search-button pe-1 d-flex align-items-center justify-content-end" @click="searchPokemon()">
 							<Icon class="search-icon" name="material-symbols:search"></Icon>
 							<span>Buscar</span>
@@ -15,7 +15,7 @@
 			</div>
 		</header>
 
-		<div class="py-5">
+		<div class="main-content py-5">
 			<slot name="default"></slot>
 		</div>
 
@@ -33,6 +33,10 @@
 </template>
 
 <script setup>
+import { ref } from 'vue';
+import { useSearch } from '@/composables/useSearch';
+import { useSocialNewtworks } from '@/composables/useSocialNetworks';
+
 const searchQuery = useSearch();
 const socialNetworks = useSocialNewtworks();
 
@@ -85,7 +89,13 @@ footer {
 }
 .search-button {
 	border-radius: 10px;
-	background-color: #e6e6e6;
+	background-color: #eeeeee;
 	cursor: pointer;
+	&:hover {
+		background-color: #e1e1e1;
+	}
+}
+.main-content {
+	min-height: 100vh;
 }
 </style>
