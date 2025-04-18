@@ -62,8 +62,8 @@ Preprocesador de CSS utilizado para mantener estilos organizados, escalables y r
 
 PostCSS
 Herramienta para transformar CSS con plugins. En este proyecto se utiliza con:
-- **autoprefixer**: añade automáticamente prefijos para compatibilidad entre navegadores
-- **postcss-custom-media**: permite definir media queries reutilizables para mejorar la legibilidad y mantener reglas responsivas limpias
+- **autoprefixer**: añade automáticamente prefijos para compatibilidad entre navegadores.
+- **postcss-custom-media**: permite definir media queries reutilizables para mejorar la legibilidad y mantener reglas responsivas limpias.
 
 Bootstrap 5
 Framework CSS que facilita la creación de interfaces modernas y responsivas con su sistema de grid, clases utilitarias y estilos prediseñados. Perfecto para diseños rápidos y robustos.
@@ -72,7 +72,7 @@ Iconify
 Librería que facilita la implementación de una gran variedad de iconos, los cuales se pueden personalizar en cuanto a color, tamaño, etc.
 
 Vitest
-Framework de pruebas moderno y veloz diseñado para trabajar con Vite/Nuxt. Permite pruebas unitarias e integración fácilmente configurables, con informes de cobertura y compatibilidad con herramientas de CI
+Framework de pruebas moderno y veloz diseñado para trabajar con Vite/Nuxt. Permite pruebas unitarias e integración fácilmente configurables, con informes de cobertura y compatibilidad con herramientas de CI.
 
 ---
 
@@ -118,13 +118,13 @@ Framework de pruebas moderno y veloz diseñado para trabajar con Vite/Nuxt. Perm
 
 ## 🌿 Estructura de Ramas
 
-**main**: rama de producción
+**main**: rama de producción.
 
-**develop**: rama de desarrollo
+**develop**: rama de desarrollo.
 
-**feature/<feature-name>**: ramas para cada nueva funcionalidad
+**feature/<feature-name>**: ramas para cada nueva funcionalidad.
 
-**testing**: rama para gestionar las pruebas unitarias
+**testing**: rama para gestionar las pruebas unitarias.
 
 ---
 
@@ -148,7 +148,7 @@ Framework de pruebas moderno y veloz diseñado para trabajar con Vite/Nuxt. Perm
 
 * Visualización de estados: Loading..., No data, Error con feedback al usuario.
 
-* Página para manejo de errores como 404 Not Found
+* Página para manejo de errores como 404 Not Found.
 
 ---
 
