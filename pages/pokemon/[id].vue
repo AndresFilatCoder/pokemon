@@ -45,6 +45,11 @@ const route = useRoute()
 const router = useRouter()
 const searchQuery = useSearch()
 
+useSeoMeta({
+	title: `Detalles de ${route.params.id}`,
+	ogTitle: `Obten informacion detallada de ${route.params.id}`,
+})
+
 const pokemonDetailsService = new PokemonDetailsService();
 
 const pokemon = ref(null)
