@@ -154,7 +154,7 @@ Framework de pruebas moderno y veloz diseñado para trabajar con Vite/Nuxt. Perm
 
 ## 📐 Diagrama de Componentes
 
-![Diagrama de flujo de componentes](documentation/components-flow-diagram.png)
+![Diagrama de flujo de componentes](documentation/components-diagram-flow.png)
 
 ---
 
