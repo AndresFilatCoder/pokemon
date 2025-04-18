@@ -30,5 +30,5 @@ export default defineNuxtConfig({
 			title: 'PokePage',
 		}
 	},
-	modules: ['@nuxt/icon']
+	modules: ['@nuxt/icon', '@nuxt/test-utils/module']
 })
