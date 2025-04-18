@@ -5,7 +5,7 @@ export default class PokemonService {
 		this.pokemonBaseList = ref([])
 	}
 
-	async getPokemonBaseList(offset: number = 0, limit: number = 20) {
+	async getPokemonBaseList(offset: number = 0, limit: number = 30) {
 		const { data, error, execute } = await useFilat().$get('pokemon', {
 			query: { offset, limit }
 		});
