@@ -33,6 +33,10 @@
 </template>
 
 <script setup>
+import { ref } from 'vue';
+import { useSearch } from '@/composables/useSearch';
+import { useSocialNewtworks } from '@/composables/useSocialNetworks';
+
 const searchQuery = useSearch();
 const socialNetworks = useSocialNewtworks();
 
