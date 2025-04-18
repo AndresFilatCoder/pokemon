@@ -4,9 +4,9 @@ import { describe, it, expect } from 'vitest'
 describe('PokemonCard.vue', () => {
 	it('Should display Height, Weight, and Base Health in the card content', async () => {
 		globalThis.usePokemonStats = () => ({
-			weight: { value: 42 },  // 42 kg
-			baseHp: { value: 99 },   // 99 pts
-			height: { value: 17 },   // 17 cm
+			weight: { value: 42 },
+			baseHp: { value: 99 },
+			height: { value: 17 },
 			soundUrl: '',
 			image: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png'
 		})
